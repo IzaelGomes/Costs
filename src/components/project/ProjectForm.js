@@ -54,9 +54,7 @@ const ProjectForm = ({handleSubmit, btnText, projectData}) => {
       text="Nome do projeto" 
       placeholder="Insira o nome do projeto "
       handleOnchange={handleChange}
-            />
-       
-
+      />
        
       <Input 
        type="number"
@@ -74,7 +72,6 @@ const ProjectForm = ({handleSubmit, btnText, projectData}) => {
        handleOnchange={handleCategory}
        value={project.category ? project.category.id : ''}
        />
-
         
        <SubmitButton text={btnText}/>
         

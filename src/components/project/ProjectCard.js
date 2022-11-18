@@ -21,11 +21,12 @@ const ProjectCard = ({id, name, budget, category, handleRemove}) => {
         <span>Orçamento :</span> R${budget}
       </p>
       <p className={styles.category_text}>
-        <span className={`${styles[category.name.toLowerCase()]}`}> </span> {category.name}
+        <span className={`${styles[category.name.toLowerCase()]}`}> </span> {category.name} 
       </p>
       <div className={styles.project_card_actions}>
 
-        <Link to='/' >
+
+        <Link to={`/project/${id}`}>
           <BsPencil/> Editar
         </Link>
 
